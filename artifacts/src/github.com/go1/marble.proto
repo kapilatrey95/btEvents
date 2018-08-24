@@ -1,0 +1,30 @@
+syntax = "proto3";
+package myProto;
+import "google/protobuf/any.proto";
+
+
+
+message  marble  {
+	string ObjectType=1; //docType is used to distinguish the various types of objects in state database
+	string Name=2;    //the fieldtags are needed to keep case from bouncing around
+	string Color=3;
+    int32 Size=4;   
+	string Owner=5;
+}
+
+
+message payload  {
+	string AssetType = 1;
+	string     Action = 2;
+	string  AssetAddress = 3;
+    google.protobuf.Any PayloadData = 4;
+}
+
+
+
+// type userData struct {
+// 	Category string `json:"category"`
+// 	Org      string `json:"org"`
+// 	Username string `json:"username"`
+// 	UserID   string `json:"userID"`
+// }

@@ -1,0 +1,15 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "github.com/golang/protobuf/proto",
+			"revision": ""
+		},
+		{
+			"path": "github.com/hyperledger/fabric/protos/peer",
+			"revision": ""
+		}
+	],
+	"rootPath": "github.com/go"
+}
